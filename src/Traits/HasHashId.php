@@ -6,8 +6,8 @@ namespace Deligoez\LaravelModelHashId\Traits;
 
 use Deligoez\LaravelModelHashId\Support\Config;
 use Deligoez\LaravelModelHashId\Support\ConfigParameters;
-use Deligoez\LaravelModelHashId\Support\Generator;
 use Hashids\HashidsInterface;
+use Deligoez\LaravelModelHashId\Support\Generator;
 
 /**
  * @mixin \Illuminate\Database\Eloquent\Model
@@ -22,7 +22,6 @@ trait HasHashId
     /**
      * Initialize the HasHasId trait for an instance.
      *
-     * @return void
      *
      * @throws \Deligoez\LaravelModelHashId\Exceptions\UnknownHashIdConfigParameterException
      */
@@ -34,7 +33,6 @@ trait HasHashId
     /**
      * Get the Hash Id for the model.
      *
-     * @return string|null
      *
      * @throws \Deligoez\LaravelModelHashId\Exceptions\UnknownHashIdConfigParameterException
      */
@@ -60,9 +58,7 @@ trait HasHashId
     /**
      * Decode given Hash Id and return the model key.
      *
-     * @param  string  $hashId
      *
-     * @return int|null
      *
      * @throws \Deligoez\LaravelModelHashId\Exceptions\UnknownHashIdConfigParameterException
      */
