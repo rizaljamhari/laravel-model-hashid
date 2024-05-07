@@ -139,8 +139,10 @@ class HasHasIdTest extends TestCase
         $this->assertNull($key);
     }
 
-    /** @test */
-    public function it_returns_null_if_hashId_prefix_does_not_match_model_prefix(): void
+    /**
+     * @test
+     */
+    public function it_returns_null_if_hash_id_prefix_does_not_match_model_prefix(): void
     {
         // 1. Arrange 🏗
         Config::set(ConfigParameters::PREFIX, 'a_custom_prefix', ModelA::class);
